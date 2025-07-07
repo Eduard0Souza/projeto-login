@@ -24,15 +24,16 @@ section#login{
     position: absolute;
     top:50% ;
     left: 50%;
+   
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
     transform: translate(-50%, -50%);
-     background-color: white;
-     width: 250px;
-     height: 515px;
-     border-radius: 20px;
-     overflow: hidden;
-     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
-     transition: width .2s, height .5s;
-     transition-timing-function:ease-in;
+    transition: width .2s, height .5s;
+    transition-timing-function:ease-in;
 }
 section#login > div#imagem{
     display: block;
@@ -44,13 +45,24 @@ section#login > div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+    text-align: center;
 }
 div#formulario > h1{
+    display: inline-block;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
+    background-color: #49a09d;
+    border-radius: 8px;
+    padding: 5px 20px;
+    color:white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.692);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
 }
 div#formulario > p{
     font-size: 0.8em;
+    text-align: justify;
 }
 
 form > div.campo{
@@ -58,8 +70,28 @@ form > div.campo{
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+}
+div.campo >label > i{
+    color: white;    
+    font-size: 2em;
+    width: 40px;
+    padding: 3px;
+}
+div.campo input:focus-within{
+    background-color: white;
+}
+div.campo >input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(99% - 44px);
+   
+    height:36px ;
+    border: 0px;
+    border-radius: 8px;
+    padding: 3px;
+    transform: translateY(-9px);
 }
 
 form > input[type=submit]{
@@ -70,7 +102,7 @@ form > input[type=submit]{
     height: 40px;
     background-color: #49a09d;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     
 }
